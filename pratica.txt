@@ -1,0 +1,96 @@
+nome = "marcelo"
+idade = 25
+saldo = 5.25
+DATA_DE_NASCIMENTO = "19-05-2000"
+
+x = True
+y = False
+z = True
+
+result = (x and y) or z
+
+lista = [1,2,3,"banana", True]
+tupla = (1,2,3,"abacate", False)
+
+presente = 2 in lista
+n_presente = 4 not in lista
+
+dicionario = {
+    "chave" : "valor",
+    "nome" : "banana",
+    "idade" : 69
+}
+
+matriz = [["cajá","castanha","melancia"],["banana", "maçã", "uva"],["pera", "melão", "mamão"]]
+
+for linha in matriz:
+    print(linha)
+    
+lista.append(4)
+lista.remove(3)
+lista.append(3)
+lista.remove(4)
+
+primeiro_dicionario = {
+    "first_name" : "Marcelo",
+    "last_name" : "Cardoso",
+    "email" : "email@email.com",
+    "password" : "123passwordright",
+    "address" : {
+        "street" : "banana street",
+        "number" : "69",
+    },
+    "job" : "blow job"
+}
+
+print(primeiro_dicionario)
+##################################################
+teste = 0
+teste2 = 0
+
+teste+=2
+
+teste-=2
+
+teste*=2
+
+teste/=2
+
+teste//=2
+
+teste%=2
+
+teste**=2
+
+lista1 = [1,2,3]
+lista2 = lista1
+
+result1 = lista1 is lista2 #true
+result2 = lista1 is not lista2 #false
+print(result1)
+print(result2)
+
+lista = [1,2,3] #aceita todo tipo de dado e seus itens são variados
+tupla = (1,2,3) #aceita todod tipo de dados e seus itens não podem variar
+conjunto = {1,2,3} #aceita todo tipo de dados e não podem variar, mas também aceitas operações de conjuntos
+conjunto2 = set([3,4,5]) #conjunto pode ser criado pela função set com uma lista dentro
+#operações com conjunto: (união | ), (interseção & ), (diferença - );
+#funções para operação de conjuntos: add() & discard()
+
+dicionario = {
+    "nome": "marcelo",
+    "idade" : "25",
+    "email" : "email@email.com"
+}
+#############################################
+import requests
+
+def site_python():
+    url = 'https://www.python.org'
+    res = requests.get(url)
+    print(res)
+    
+    if res == 200:
+        print(res.text)
+        
+site_python()
